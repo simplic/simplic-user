@@ -81,5 +81,15 @@ namespace Simplic.User
         /// Gets or sets the substitution end date
         /// </summary>
         public DateTime? SubstitutionEnd { get; set; }
+
+        /// <summary>
+        /// Gets or sets the user phone number
+        /// </summary>
+        public string PhoneNumber { get; set; }
+
+        /// <summary>
+        /// Gets or sets the user description
+        /// </summary>
+        public string Description { get; set; }
     }
 }
