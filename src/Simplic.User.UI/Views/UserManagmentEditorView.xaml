@@ -50,11 +50,7 @@
                                     <ColumnDefinition Width="Auto" />
                                     <ColumnDefinition Width="Auto" />
                                 </Grid.ColumnDefinitions>
-                                <telerik:RadRibbonButton Command="{Binding Path=AddNewGroup}" Grid.Column="0" Margin="0,0,5,0"
-                                                         LargeImage="{simplic:Icon Name=usermanagement_add_group_32x}"
-                                                         Visibility="{Binding Path=IsGroupsSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:UserManagmentEditorView}}, Converter={StaticResource BooleanToVisibilityConverter}}"
-                                                         Text="{simplic:Localization Key=usermanagment_add_group_label}" Size="Large"/>
-                                
+
                                 <telerik:RadRibbonButton Command="{Binding Path=AddUserCommand}" Grid.Column="1" Margin="0,0,5,0"
                                                          LargeImage="{simplic:Icon Name=usermanagement_add_user_32x}" Text="{simplic:Localization Key=usermanagment_add_user_label}" Size="Large"/>
 
@@ -76,6 +72,11 @@
                                                            Margin="5,0,0,0" Name="_changeBtn2" Grid.Column="3"
                                                            Command="{Binding Path=SkipSelectedUserCommand}"
                                                            Visibility="{Binding Path=IsGroupsSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:UserManagmentEditorView}}, Converter={StaticResource InvertedBooleanToVisibilityConverter}}"/>
+
+                                <telerik:RadRibbonButton Command="{Binding Path=AddNewGroup}" Grid.Column="0" Margin="0,0,5,0"
+                                                         LargeImage="{simplic:Icon Name=usermanagement_add_group_32x}"
+                                                         Visibility="{Binding Path=IsGroupsSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:UserManagmentEditorView}}, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                                         Text="{simplic:Localization Key=usermanagment_add_group_label}" Size="Large"/>
                             </Grid>
                         </telerik:RadRibbonGroup>
                     </telerik:RadRibbonTab>
