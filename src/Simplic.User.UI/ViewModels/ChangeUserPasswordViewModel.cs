@@ -8,7 +8,7 @@ namespace Simplic.User.UI
     /// <summary>
     /// View model for password change dialog window
     /// </summary>
-    class ChangeUserPasswordViewModel : Simplic.UI.MVC.ViewModelBase, IUserDialogViewModel, ISaveableViewModel
+    public class ChangeUserPasswordViewModel : Simplic.UI.MVC.ViewModelBase, IUserDialogViewModel, ISaveableViewModel
     {
         #region fields
         private readonly UserViewModel _user;
