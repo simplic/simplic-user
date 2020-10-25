@@ -9,11 +9,15 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <DockPanel Margin="7,10,7,7" LastChildFill="True">
-            <Label DockPanel.Dock="Left" Content="{simplic:Localization Key=usermanagment_add_group_name_label}" />
-            <simplic:TextBox Margin="5,0,0,0" Text="{Binding Path=GroupName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="27" VerticalAlignment="Top" VerticalContentAlignment="Center" />
-        </DockPanel>
-        <simplic:CheckBox Grid.Row="1" Margin="7,5,0,0" Content="{simplic:Localization Key=usermanagment_is_defaule_group_label}"
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="{simplic:Localization Key=usermanagment_add_group_name_label}" />
+        <simplic:TextBox Grid.Column="1" Text="{Binding Path=GroupName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="27" VerticalAlignment="Top" VerticalContentAlignment="Center" />
+
+        <simplic:CheckBox Grid.Row="1" Grid.Column="1" Content="{simplic:Localization Key=usermanagment_is_defaule_group_label}"
                           IsChecked="{Binding Path=IsDefault, Mode=TwoWay}" />
     </Grid>
 </simplic:DefaultRibbonWindow>

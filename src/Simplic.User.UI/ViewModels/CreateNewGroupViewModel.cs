@@ -8,7 +8,7 @@ using System.Windows.Input;
 
 namespace Simplic.User.UI
 {
-    class CreateNewGroupViewModel : ViewModelBase, ISaveableViewModel, IUserDialogViewModel
+    public class CreateNewGroupViewModel : ViewModelBase, ISaveableViewModel, IUserDialogViewModel
     {
         #region fields
         private string _groupName;
