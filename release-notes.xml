@@ -1,2 +1,5 @@
 <ReleaseNotes>
+  <ChangeSet>
+    <Change type="feature">Adds the possibility to add user-groups.</Change>
+  </ChangeSet>
 </ReleaseNotes>
