@@ -150,88 +150,73 @@
       <Version>1.1.19</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Base">
-      <Version>7.2.120.329</Version>
+      <Version>7.2.220.329</Version>
     </PackageReference>
     <PackageReference Include="Simplic.BaseDAL">
-      <Version>7.2.120.329</Version>
-    </PackageReference>
-    <PackageReference Include="Simplic.Cache.Service">
-      <Version>6.0.18.619</Version>
+      <Version>7.2.220.329</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Configuration">
-      <Version>6.1.20.322</Version>
+      <Version>7.0.20.1006</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Configuration.Data.DB">
-      <Version>6.1.20.322</Version>
-    </PackageReference>
-    <PackageReference Include="Simplic.Configuration.Service">
-      <Version>6.1.20.322</Version>
+      <Version>7.0.120.1006</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Data">
       <Version>1.6.120.322</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Data.Sql">
-      <Version>1.14.120.322</Version>
+      <Version>1.14.220.427</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Dlr">
       <Version>1.4.20.322</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Framework.Base">
-      <Version>7.2.120.329</Version>
+      <Version>7.2.320.1018</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Framework.DAL">
-      <Version>7.2.120.329</Version>
+      <Version>7.2.220.329</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Framework.DBUI">
-      <Version>7.2.120.329</Version>
+      <Version>7.3.320.1018</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Framework.Model">
-      <Version>7.2.120.329</Version>
+      <Version>7.2.220.329</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Framework.Repository">
-      <Version>7.2.120.329</Version>
+      <Version>7.2.220.329</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Group">
       <Version>6.0.18.619</Version>
     </PackageReference>
-    <PackageReference Include="Simplic.Group.Service">
-      <Version>6.0.218.619</Version>
-    </PackageReference>
     <PackageReference Include="Simplic.Icon.UI">
-      <Version>6.1.18.917</Version>
+      <Version>6.1.220.1018</Version>
     </PackageReference>
-    <PackageReference Include="Simplic.Localization.Service">
-      <Version>6.1.18.917</Version>
+    <PackageReference Include="Simplic.Localization">
+      <Version>6.1.20.322</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Localization.UI">
-      <Version>1.0.0.2</Version>
+      <Version>1.0.100.2</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Log">
-      <Version>7.2.120.329</Version>
+      <Version>7.2.220.329</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Session">
-      <Version>6.4.20.322</Version>
-    </PackageReference>
-    <PackageReference Include="Simplic.Session.Service">
       <Version>6.4.20.322</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Sql">
       <Version>6.3.20.322</Version>
     </PackageReference>
     <PackageReference Include="Simplic.Sql.SqlAnywhere.Service">
-      <Version>5.95.218.101</Version>
+      <Version>5.95.420.1009</Version>
     </PackageReference>
     <PackageReference Include="Simplic.TenantSystem">
-      <Version>2.0.120.41</Version>
+      <Version>2.0.320.41</Version>
     </PackageReference>
     <PackageReference Include="Simplic.TenantSystem.Data.DB">
       <Version>2.0.20.331</Version>
     </PackageReference>
-    <PackageReference Include="Simplic.TenantSystem.Service">
-      <Version>2.0.20.331</Version>
-    </PackageReference>
     <PackageReference Include="Simplic.UI">
-      <Version>7.2.120.329</Version>
+      <Version>7.2.320.1018</Version>
     </PackageReference>
     <PackageReference Include="Telerik.Windows.Controls.GridView.for.Wpf.Xaml">
       <Version>2020.1.218</Version>
