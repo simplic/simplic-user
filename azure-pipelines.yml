@@ -21,6 +21,7 @@ resources:
       type: github
       name: simplic/build-infrastructure
       endpoint: simplic-bot
+
 steps:
   - task: NuGetToolInstaller@1
     inputs:
@@ -44,22 +45,23 @@ steps:
           branch_name:
             ${{ replace(variables['Build.SourceBranch'], 'refs/heads/', '')
             }}
+
   - task: VSTest@2
     inputs:
-      testSelector: testAssemblies
-      testAssemblyVer2: '**\Simplic.User.Test.dll
-
-        !**\*TestAdapter.dll
-
+      testSelector: "testAssemblies"
+      testAssemblyVer2: |
+        **\Simplic.User.Test.dll
         !**\obj\**
-
-        '
+      searchFolder: "src"
+      .\
+        
   - task: NuGetCommand@2
     inputs:
       command: pack
       packagesToPack: src/Simplic.User**/*.csproj;!src/Simplic.User.Test/Simplic.User.Test.csproj
       configuration: $(buildConfiguration)
       versioningScheme: "off"
+
   - task: NuGetCommand@2
     condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
     inputs:
