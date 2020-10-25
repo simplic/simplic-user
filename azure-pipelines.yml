@@ -53,7 +53,6 @@ steps:
         **\Simplic.User.Test.dll
         !**\obj\**
       searchFolder: "src"
-      .\
         
   - task: NuGetCommand@2
     inputs:
