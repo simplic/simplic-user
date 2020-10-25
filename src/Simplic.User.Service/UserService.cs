@@ -16,6 +16,7 @@ namespace Simplic.User.Service
         private const string UserTableName = "ESS_MS_Intern_User";
         private const string UserAssignmentTableName = "ESS_MS_Intern_UserAssignment";
         private const string UserToTenantAssignmentTableName = "Tenant_Organization_User";
+
         private readonly ISqlService sqlService;        
         #endregion
 

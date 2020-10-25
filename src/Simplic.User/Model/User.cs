@@ -88,7 +88,7 @@ namespace Simplic.User
         public string PhoneNumber { get; set; }
 
         /// <summary>
-        /// Gets or sets the user description
+        /// Gets or sets the user description 
         /// </summary>
         public string Description { get; set; }
     }
