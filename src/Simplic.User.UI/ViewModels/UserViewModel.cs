@@ -184,18 +184,21 @@ namespace Simplic.User.UI
         /// </summary>
         private void SaveUserGroups()
         {
-            if(_user != null)
+            if (_user != null)
             {
+                var userId = UserId == 0 ? _user.Ident : UserId;
                 var groupService = ServiceLocator.Current.GetInstance<IGroupService>();
-                var gs = groupService.GetAllByUserId(UserId)?.ToList();
+                var gs = groupService.GetAllByUserId(userId)?.ToList();
                 if(gs != null)
                 {
-                    var removedGroups = gs.Select(g => g.GroupId).Where(g => !Groups.Select(ng => ng.GroupId).Contains(g));
+                    var removedGroups = UserId != 0
+                        ? gs.Select(g => g.GroupId).Where(g => !Groups.Select(ng => ng.GroupId).Contains(g))
+                        : gs.Select(g => g.GroupId);
                     foreach (var removeGroupId in removedGroups)
-                        _userService.RemoveGroup(UserId, removeGroupId);
+                        _userService.RemoveGroup(userId, removeGroupId);
                     var addedGroups = Groups.Select(g => g.GroupId).Where(g => !gs.Select(ng => ng.GroupId).Contains(g));
                     foreach (var addedGroupId in addedGroups)
-                        _userService.SetGroup(UserId, addedGroupId);
+                        _userService.SetGroup(userId, addedGroupId);
                 }
             }
             else
@@ -212,16 +215,17 @@ namespace Simplic.User.UI
         {
             if (_user != null)
             {
+                var userId = UserId == 0 ? _user.Ident : UserId;
                 var orgService = ServiceLocator.Current.GetInstance<IOrganizationService>();
-                var orgs = orgService.GetByUserId(UserId)?.ToList();
+                var orgs = orgService.GetByUserId(userId)?.ToList();
                 if (orgs != null)
                 {
                     var removedOrganizations = orgs.Select(o => o.Id).Where(o => !Organizations.Select(no => no.OrganizationId).Contains(o));
                     foreach (var removeOrganizationId in removedOrganizations)
-                        _userService.RemoveTenant(UserId, removeOrganizationId);
+                        _userService.RemoveTenant(userId, removeOrganizationId);
                     var addedOrganizations = Organizations.Select(o => o.OrganizationId).Where(o => !orgs.Select(on => on.Id).Contains(o));
                     foreach (var addedOrganizationId in addedOrganizations)
-                        _userService.SetTenant(UserId, addedOrganizationId);
+                        _userService.SetTenant(userId, addedOrganizationId);
                 }
             }
             else
