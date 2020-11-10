@@ -2,4 +2,7 @@
   <ChangeSet guid="770036ad-3733-406b-90ae-63ec23ba823c">
     <Change type="feature">Adds the possibility to add user-groups.</Change>
   </ChangeSet>
+  <ChangeSet>
+    <Change type="bug">Fixes a bug, which prevents from saving user-group and user-tenant assignment for new users.</Change>
+  </ChangeSet>
 </ReleaseNotes>
