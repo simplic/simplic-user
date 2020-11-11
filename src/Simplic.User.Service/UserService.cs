@@ -8,7 +8,7 @@ using System.Linq;
 namespace Simplic.User.Service
 {
     /// <summary>
-    /// Contains methods to manipulate user data
+    /// Contains methods to manipulate user data 
     /// </summary>
     public class UserService : IUserService
     {
