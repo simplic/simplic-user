@@ -9,6 +9,7 @@ namespace Simplic.User.Test
         [TestMethod]
         public void TestMethod1()
         {
+            
         }
     }
 }
