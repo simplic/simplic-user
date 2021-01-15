@@ -13,7 +13,7 @@ namespace Simplic.User.UI
     /// <summary>
     /// Main view model. Controls list of users, groups and organizations view models
     /// </summary>
-    public class UserManagmentEditorViewModel : ViewModelBase, ISaveableViewModel, IOpenSelectedUserDetails
+    public class UserManagementEditorViewModel : ViewModelBase, ISaveableViewModel, IOpenSelectedUserDetails
     {
         #region fields
         private readonly IUserService _userService;
@@ -46,7 +46,7 @@ namespace Simplic.User.UI
         /// <summary>
         /// Default constructor
         /// </summary>
-        public UserManagmentEditorViewModel()
+        public UserManagementEditorViewModel()
         {
             _userService = ServiceLocator.Current.GetInstance<IUserService>();
             _groupService = ServiceLocator.Current.GetInstance<IGroupService>();
