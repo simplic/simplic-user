@@ -10,7 +10,7 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <DockPanel Margin="7,10,7,7" LastChildFill="True">
-            <Label DockPanel.Dock="Left" Content="{simplic:Localization Key=usermanagment_org_name_label}" />
+            <Label DockPanel.Dock="Left" Content="{simplic:Localization Key=usermanagement_org_name_label}" />
             <simplic:TextBox Margin="5,0,0,0" Text="{Binding Path=NewOrganizationName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="27" VerticalAlignment="Top" VerticalContentAlignment="Center" />
         </DockPanel>
     </Grid>

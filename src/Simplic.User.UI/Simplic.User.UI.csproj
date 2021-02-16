@@ -91,7 +91,7 @@
     <Compile Include="ViewModels\OrganizationDetailsViewModel.cs" />
     <Compile Include="ViewModels\OrganizationViewModel.cs" />
     <Compile Include="ViewModels\UserDetailsViewModel.cs" />
-    <Compile Include="ViewModels\UserManagmentEditorViewModel.cs" />
+    <Compile Include="ViewModels\UserManagementEditorViewModel.cs" />
     <Compile Include="ViewModels\UserViewModel.cs" />
     <Compile Include="Views\ChangeUserPasswordView.xaml.cs">
       <DependentUpon>ChangeUserPasswordView.xaml</DependentUpon>
@@ -108,8 +108,8 @@
     <Compile Include="Views\UserDetailsView.xaml.cs">
       <DependentUpon>UserDetailsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\UserManagmentEditorView.xaml.cs">
-      <DependentUpon>UserManagmentEditorView.xaml</DependentUpon>
+    <Compile Include="Views\UserManagementEditorView.xaml.cs">
+      <DependentUpon>UserManagementEditorView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -268,7 +268,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\UserManagmentEditorView.xaml">
+    <Page Include="Views\UserManagementEditorView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
