@@ -88,7 +88,7 @@
 
         <TabControl Grid.Row="1">
             <TabItem Header="{simplic:Localization Key=usermanagement_user_and_groups_label}" 
-                     IsSelected="{Binding Path=IsGroupsSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:UserManagesmentEditorView}}, Mode=OneWayToSource}">
+                     IsSelected="{Binding Path=IsGroupsSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:UserManagementEditorView}}, Mode=OneWayToSource}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
