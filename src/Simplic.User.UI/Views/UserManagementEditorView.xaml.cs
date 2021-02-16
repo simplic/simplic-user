@@ -11,16 +11,16 @@ using Telerik.Windows.Controls.GridView;
 
 namespace Simplic.User.UI
 {
-    public partial class UserManagmentEditorView : DefaultRibbonWindow
+    public partial class UserManagementEditorView : DefaultRibbonWindow
     {
-        public static readonly DependencyProperty IsGroupsSelectedProperty = DependencyProperty.Register("IsGroupsSelected", typeof(bool), typeof(UserManagmentEditorView));
+        public static readonly DependencyProperty IsGroupsSelectedProperty = DependencyProperty.Register("IsGroupsSelected", typeof(bool), typeof(UserManagementEditorView));
         public bool IsGroupsSelected
         {
             get { return (bool)GetValue(IsGroupsSelectedProperty); }
             set { SetValue(IsGroupsSelectedProperty, value); }
         }
 
-        public UserManagmentEditorView()
+        public UserManagementEditorView()
         {
             InitializeComponent();
             roleGridView.LoadConfiguration("GRID_Role");

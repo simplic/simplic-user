@@ -14,10 +14,10 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Label Content="{simplic:Localization Key=usermanagment_add_group_name_label}" />
+        <Label Content="{simplic:Localization Key=usermanagement_add_group_name_label}" />
         <simplic:TextBox Grid.Column="1" Text="{Binding Path=GroupName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="27" VerticalAlignment="Top" VerticalContentAlignment="Center" />
 
-        <simplic:CheckBox Grid.Row="1" Grid.Column="1" Content="{simplic:Localization Key=usermanagment_is_default_group_label}"
+        <simplic:CheckBox Grid.Row="1" Grid.Column="1" Content="{simplic:Localization Key=usermanagement_is_default_group_label}"
                           IsChecked="{Binding Path=IsDefault, Mode=TwoWay}" />
     </Grid>
 </simplic:DefaultRibbonWindow>

@@ -34,7 +34,7 @@ namespace Simplic.User.UI
             if (string.IsNullOrWhiteSpace(GroupName))
             {
                 var localizationService = ServiceLocator.Current.GetInstance<ILocalizationService>();
-                var str = localizationService.Translate("usermanagment_empty_group_name_warning_label");
+                var str = localizationService.Translate("usermanagement_empty_group_name_warning_label");
                 MessageBox.Show(str);
                 return;
             }
