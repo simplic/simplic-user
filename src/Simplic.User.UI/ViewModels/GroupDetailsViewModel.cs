@@ -17,7 +17,7 @@ namespace Simplic.User.UI
         private string _newGroupName;
         #endregion
 
-        #region ctr
+        #region Constructor
         /// <summary>
         /// Constructor for the view model
         /// </summary>
